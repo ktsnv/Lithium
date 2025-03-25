@@ -21,6 +21,8 @@ function setup() {
   container.style.zIndex = '1000'; /* Makes it appear on top of everything */
   container.style.display = 'none'; /* Starts hidden */
   container.style.backdropFilter = 'blur(5px)'; /* Apply the blur effect */
+  container.style.justifyContent = 'center'; /* Centers horizontally */
+  container.style.alignItems = 'center'; /* Centers vertically */
 
   iFrame.id = "lithiumIframe";
   iFrame.src = link;
@@ -29,11 +31,8 @@ function setup() {
   iFrame.style.maxWidth = '600px';
   iFrame.style.maxHeight = '400px';
   iFrame.style.border = 'none'; /* Remove default iframe border */
-  iFrame.style.justifyContent = 'center'; /* Centers horizontally */
-  iFrame.style.alignItems = 'center'; /* Centers vertically */
   iFrame.style.borderRadius = '10px'; /* Rounded corners */
   iFrame.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)'; /* Shadow */
-  iFrame.style.display = 'flex';
   
   document.body.appendChild(container);
   container.appendChild(iFrame);
