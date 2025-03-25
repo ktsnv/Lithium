@@ -6,7 +6,7 @@ let link;
 setTimeout(setup, 0);
 
 function setup() {
-  link = prompt("Please enter a link for the iFrame", "");
+  link = prompt("Please enter a link for the iframe");
   
   container = document.createElement('div');
   iFrame = document.createElement('iframe');
