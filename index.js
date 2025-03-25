@@ -25,6 +25,7 @@ function setup() {
   lithiumContainer.style.backdropFilter = 'blur(5px)'; /* Apply the blur effect */
   lithiumContainer.style.justifyContent = 'center'; /* Centers horizontally */
   lithiumContainer.style.alignItems = 'center'; /* Centers vertically */
+  lithiumContainer.style.flexDirection = 'column';
 
   iFrame.id = "lithiumIframe";
   iFrame.src = link;
