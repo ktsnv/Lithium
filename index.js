@@ -33,6 +33,7 @@ function setup() {
   iFrame.style.alignItems = 'center'; /* Centers vertically */
   iFrame.style.borderRadius = '10px'; /* Rounded corners */
   iFrame.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)'; /* Shadow */
+  iFrame.style.display = 'flex';
   
   document.body.appendChild(container);
   container.appendChild(iFrame);
