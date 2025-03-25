@@ -21,7 +21,7 @@ function setup() {
 
 document.addEventListener('keydown', function(event) {
   if (event.key === '\\') {
-    console.log('key pressed');
+    console.log('Lithium Menu Toggled');
     toggle(container);
   }
 });
