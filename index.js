@@ -26,8 +26,8 @@ function setup() {
 
   iFrame.id = "lithiumIframe";
   iFrame.src = link;
-  iFrame.style.width = '80%'; /* Adjust the width of the iframe */
-  iFrame.style.height = '80%'; /* Adjust the height of the iframe */
+  iFrame.style.width = '60%'; /* Adjust the width of the iframe */
+  iFrame.style.height = '60%'; /* Adjust the height of the iframe */
   //iFrame.style.maxWidth = '600px';
   //iFrame.style.maxHeight = '400px';
   iFrame.style.border = 'none'; /* Remove default iframe border */
