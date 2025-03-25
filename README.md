@@ -5,7 +5,7 @@ Cheat menu for the Google Champion Island game (aka kitsune)
 Open the devtools and paste the following code
 
 ```js
-document.body.appendChild((()=>{const e=document.createElement('script');e.src='https://ktsnv.github.io/Lithium.js';return e;})());
+document.body.appendChild((()=>{const e=document.createElement('script');e.src='https://ktsnv.github.io/Lithium/index.js';return e;})());
 ```
 
 ## Usage
