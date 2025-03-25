@@ -28,8 +28,8 @@ function setup() {
   iFrame.src = link;
   iFrame.style.width = '80%'; /* Adjust the width of the iframe */
   iFrame.style.height = '80%'; /* Adjust the height of the iframe */
-  iFrame.style.maxWidth = '600px';
-  iFrame.style.maxHeight = '400px';
+  //iFrame.style.maxWidth = '600px';
+  //iFrame.style.maxHeight = '400px';
   iFrame.style.border = 'none'; /* Remove default iframe border */
   iFrame.style.borderRadius = '10px'; /* Rounded corners */
   iFrame.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)'; /* Shadow */
