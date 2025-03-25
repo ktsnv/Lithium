@@ -31,6 +31,8 @@ function setup() {
   iFrame.style.border = 'none'; /* Remove default iframe border */
   iFrame.style.justifyContent = 'center'; /* Centers horizontally */
   iFrame.style.alignItems = 'center'; /* Centers vertically */
+  iFrame.style.borderRadius = '10px'; /* Rounded corners */
+  iFrame.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)'; /* Shadow */
   
   document.body.appendChild(container);
   container.appendChild(iFrame);
