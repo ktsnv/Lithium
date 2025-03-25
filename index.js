@@ -1,8 +1,10 @@
 let menuToggled = false;
-let container = document.createElement('div');
+let container;
 setTimeout(setup, 0);
 
 function setup() {
+  container = document.createElement('div');
+
   container.id = "lithiumContainer";
 
   container.style.position = "fixed"; /* Makes it stay in place even when you scroll */
@@ -11,23 +13,23 @@ function setup() {
   container.style.width = '100%'; /* Covers the whole width */
   container.style.height = '100%'; /* Covers the whole height */
   container.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; /* Black with 50% transparency */
-  container.style.z-index = '1000'; /* Makes it appear on top of everything */
+  container.style.zIndex = '1000'; /* Makes it appear on top of everything */
   container.style.display = 'none'; /* Starts hidden */
 }
 
 document.addEventListener('keydown', function(event) {
   if (event.key === '\\') {
     console.log('key pressed');
-    toggle();
+    toggle(container);
   }
 });
 
-function toggle() {
+function toggle(let object) {
   menuToggled = !menuToggled;
   if (menuToggled) {
-    container.style.display = 'block';
+    object.style.display = 'block';
   }
   else {
-    container.style.display = 'none';
+    object.style.display = 'none';
   }
 }
