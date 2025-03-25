@@ -29,6 +29,8 @@ function setup() {
   iFrame.style.maxWidth = '600px';
   iFrame.style.maxHeight = '400px';
   iFrame.style.border = 'none'; /* Remove default iframe border */
+  iFrame.style.justifyContent = 'center'; /* Centers horizontally */
+  iFrame.style.alignItems = 'center'; /* Centers vertically */
   
   document.body.appendChild(container);
   container.appendChild(iFrame);
