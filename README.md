@@ -10,4 +10,4 @@ document.body.appendChild((()=>{const e=document.createElement('script');e.src='
 
 ## Usage
 
-Press <kbd>alt</kbd><kbd>shift</kbd> to open the menu.
+Press <kbd>\</kbd> to open the menu.
