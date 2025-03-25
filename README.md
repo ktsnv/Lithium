@@ -1,5 +1,5 @@
 # Lithium
-Cheat menu for the Google Champion Island game (aka kitsune)
+Menu for menuing
 
 ## Installation
 Open the devtools and paste the following code:
