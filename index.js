@@ -9,7 +9,7 @@ function setup() {
   link = prompt("Please enter a link for the iFrame", "");
   
   container = document.createElement('div');
-  iframe = document.createElement('iframe');
+  iFrame = document.createElement('iframe');
 
   container.id = "lithiumContainer";
   container.style.position = "fixed"; /* Makes it stay in place even when you scroll */
