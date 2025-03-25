@@ -1,13 +1,17 @@
 let menuToggled = false;
 let container;
+let iFrame;
 let isKeyPressed = false;
+let link;
 setTimeout(setup, 0);
 
 function setup() {
+  link = prompt("Please enter a link for the iFrame", "");
+  
   container = document.createElement('div');
+  iframe = document.createElement('iframe');
 
   container.id = "lithiumContainer";
-
   container.style.position = "fixed"; /* Makes it stay in place even when you scroll */
   container.style.top = '0'; /* Starts at the top of the screen */
   container.style.left = '0'; /* Starts at the left of the screen */
@@ -18,7 +22,15 @@ function setup() {
   container.style.display = 'none'; /* Starts hidden */
   container.style.backdropFilter = 'blur(5px)'; /* Apply the blur effect */
 
+  iFrame.id = "lithiumIframe";
+  iFrame.style.width = '80%'; /* Adjust the width of the iframe */
+  iFrame.style.height = '80%'; /* Adjust the height of the iframe */
+  iFrame.style.maxWidth = '600px';
+  iFrame.style.maxHeight = '400px';
+  iFrame.style.border = 'none'; /* Remove default iframe border */
+  
   document.body.appendChild(container);
+  container.appendChild(iFrame);
 }
 
 document.addEventListener('keydown', function(event) {
