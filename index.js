@@ -1,6 +1,7 @@
 let menuToggled = false;
 let container;
 let iFrame;
+let title;
 let isKeyPressed = false;
 let link;
 setTimeout(setup, 0);
@@ -10,7 +11,8 @@ function setup() {
   
   container = document.createElement('div');
   iFrame = document.createElement('iframe');
-
+  title = document.createElement('div');
+  
   container.id = "lithiumContainer";
   container.style.position = "fixed"; /* Makes it stay in place even when you scroll */
   container.style.top = '0'; /* Starts at the top of the screen */
@@ -33,8 +35,13 @@ function setup() {
   iFrame.style.border = 'none'; /* Remove default iframe border */
   iFrame.style.borderRadius = '10px'; /* Rounded corners */
   iFrame.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)'; /* Shadow */
+
+  title.style.color = 'white'; /* make the text white */
+  title.style.fontSize = '20px'; /* make the text bigger */
+  title.style.marginBottom = '5px'; /* add some space between the text and the iframe */
   
   document.body.appendChild(container);
+  container.appendChild(title);
   container.appendChild(iFrame);
 }
 
