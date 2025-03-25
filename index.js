@@ -23,6 +23,7 @@ function setup() {
   container.style.backdropFilter = 'blur(5px)'; /* Apply the blur effect */
 
   iFrame.id = "lithiumIframe";
+  iFrame.src = link;
   iFrame.style.width = '80%'; /* Adjust the width of the iframe */
   iFrame.style.height = '80%'; /* Adjust the height of the iframe */
   iFrame.style.maxWidth = '600px';
