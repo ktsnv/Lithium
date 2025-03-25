@@ -53,7 +53,7 @@ document.addEventListener('keyup', function(event) {
 function toggle(object) {
   menuToggled = !menuToggled;
   if (menuToggled) {
-    object.style.display = 'block';
+    object.style.display = 'flex';
   }
   else {
     object.style.display = 'none';
