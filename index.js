@@ -1,5 +1,6 @@
 let menuToggled = false;
 let container;
+let isKeyPressed = false;
 setTimeout(setup, 0);
 
 function setup() {
@@ -21,12 +22,17 @@ function setup() {
 }
 
 document.addEventListener('keydown', function(event) {
-  if (event.key === '\\') {
+  if (event.key === '\\' && !isKeyPressed) {
+    isKeyPressed = true;
     console.log('Lithium Menu Toggled');
     toggle(container);
   }
 });
-
+document.addEventListener('keyup', function(event) {
+  if (event.key === '\\') {
+    isKeyPressed = false;
+  }
+});
 function toggle(object) {
   menuToggled = !menuToggled;
   if (menuToggled) {
