@@ -15,6 +15,7 @@ function setup() {
   container.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; /* Black with 50% transparency */
   container.style.zIndex = '1000'; /* Makes it appear on top of everything */
   container.style.display = 'none'; /* Starts hidden */
+  conatiner.style.backdropFilter = 'blur(5px)'; /* Apply the blur effect */
 
   document.body.appendChild(container);
 }
