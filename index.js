@@ -42,8 +42,8 @@ function setup() {
   title.innerHTML = 'Lithium';
   
   document.body.appendChild(lithiumContainer);
-  container.appendChild(title);
-  container.appendChild(iFrame);
+  lithiumContainer.appendChild(title);
+  lithiumContainer.appendChild(iFrame);
 }
 
 document.addEventListener('keydown', function(event) {
