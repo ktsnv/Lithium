@@ -40,6 +40,7 @@ function setup() {
   title.style.color = 'white'; /* make the text white */
   title.style.fontSize = '20px'; /* make the text bigger */
   title.style.marginBottom = '5px'; /* add some space between the text and the iframe */
+  title.style.fontFamily = 'Arial, sans-serif'; /* Add this line! */
   title.innerHTML = 'Lithium';
   
   document.body.appendChild(lithiumContainer);
