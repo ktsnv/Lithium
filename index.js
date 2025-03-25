@@ -24,7 +24,7 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
-function toggle(let object) {
+function toggle(object) {
   menuToggled = !menuToggled;
   if (menuToggled) {
     object.style.display = 'block';
