@@ -10,7 +10,7 @@ function setup() {
   container.style.left = '0'; /* Starts at the left of the screen */
   container.style.width = '100%'; /* Covers the whole width */
   container.style.height = '100%'; /* Covers the whole height */
-  container.style.background-color = 'rgba(0, 0, 0, 0.5)'; /* Black with 50% transparency */
+  container.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; /* Black with 50% transparency */
   container.style.z-index = '1000'; /* Makes it appear on top of everything */
   container.style.display = 'none'; /* Starts hidden */
 }
