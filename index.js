@@ -70,7 +70,6 @@ document.addEventListener('keydown', function(event) {
     let inputField = document.getElementById("lithiumInput");
     link = inputField.value;
     iFrame.src = link;
-    iFrame.contentWindow.location.reload();
   }
 });
 document.addEventListener('keyup', function(event) {
