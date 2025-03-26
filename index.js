@@ -65,7 +65,10 @@ document.addEventListener('keydown', function(event) {
     console.log('Lithium Menu Toggled');
     toggle(lithiumContainer);
   }
-
+  if (event.key === 'Escape' && menuToggled) {
+    console.log('Lithium Menu Off');
+    toggle(lithiumContainer);
+  }
   if (event.key === 'Enter' && menuToggled) {
     let inputField = document.getElementById("lithiumInput");
     link = inputField.value;
