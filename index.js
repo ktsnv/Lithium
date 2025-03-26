@@ -95,6 +95,9 @@ document.addEventListener('keydown', function(event) {
   if (event.key === 'Enter' && menuToggled) {
     let inputField = document.getElementById("lithiumInput");
     link = inputField.value;
+    if (link == null || link == '') {
+      link = "https://ktsnv.github.io/"
+    }
     iFrame.src = link;
   }
 });
