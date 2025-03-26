@@ -2,6 +2,7 @@ let menuToggled = false;
 let lithiumContainer;
 let iFrame;
 let title;
+let details;
 let input;
 let isKeyPressed = false;
 let link;
@@ -17,6 +18,7 @@ function setup() {
   iFrame = document.createElement('iframe');
   title = document.createElement('div');
   input = document.createElement('input');
+  details = document.createElement('div');
   
   lithiumContainer.id = "lithiumContainer";
   lithiumContainer.style.position = "fixed"; /* Makes it stay in place even when you scroll */
@@ -52,6 +54,12 @@ function setup() {
   input.value = link;
   input.id = 'lithiumInput';
   input.style.marginTop = '10px';
+
+  title.style.color = 'white'; /* make the text white */
+  title.style.fontSize = '20px'; /* make the text bigger */
+  title.style.marginTop = '10px'; /* add some space between the text and the iframe */
+  title.style.fontFamily = 'Arial, sans-serif'; /* Add this line! */
+  title.innerHTML = 'R to reload, \ to toggle menu';
   
   document.body.appendChild(lithiumContainer);
   lithiumContainer.appendChild(title);
@@ -69,7 +77,7 @@ document.addEventListener('keydown', function(event) {
     console.log('Lithium Menu Off');
     toggle(lithiumContainer);
   }
-  if (event.key === 'Enter' && menuToggled) {
+  if (event.key === 'r' && menuToggled) {
     let inputField = document.getElementById("lithiumInput");
     link = inputField.value;
     iFrame.src = link;
