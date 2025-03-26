@@ -54,14 +54,20 @@ function setup() {
   input.value = link;
   input.id = 'lithiumInput';
   input.style.marginTop = '10px';
-  input.style.boxShadow = 'inset #abacaf 0 0 0 2px';
-  input.style.border = '0';
-  input.style.background = 'rgba(0, 0, 0, 0)';
-  input.style.appearance = 'none';
-  input.borderRadius = '3px';
-  input.style.color = 'rgb(0, 0, 0)';
-  input.style.fontWeight = '400';
-  input.style.height = '40px';
+  input.style.border = '3px solid #000';
+  input.style.borderRadius = '5px';
+  input.style.height = '50px';
+  input.style.lineHeight = 'normal';
+  input.style.color = '#282828';
+  input.style.display = 'block';
+  input.style.width = '100%';
+  input.style.boxSizing = 'border-box';
+  input.style.userSelect = 'auto';
+  input.style.fontSize = '16px';
+  input.style.padding = '0 6px';
+  input.style.paddingLeft = '12px';
+  input.style.border = '3px solid #5551ff';
+                
 
   details.style.color = 'white'; /* make the text white */
   details.style.fontSize = '20px'; /* make the text bigger */
