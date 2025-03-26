@@ -9,10 +9,7 @@ let link;
 setTimeout(setup, 0);
 
 function setup() {
-  link = prompt("Please enter a link for the iframe");
-  if (link == null || link == '') {
-    link = "https://ktsnv.github.io/"
-  }
+  link = "https://ktsnv.github.io/"
   
   lithiumContainer = document.createElement('div');
   iFrame = document.createElement('iframe');
