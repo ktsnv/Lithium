@@ -38,12 +38,13 @@ function setup() {
   iFrame.src = link;
   iFrame.style.width = '60%'; /* Adjust the width of the iframe */
   iFrame.style.height = '60%'; /* Adjust the height of the iframe */
-  iFrame.style.border = 'none'; /* Remove default iframe border */
+  iFrame.style.border = '3px solid ##eb4034';
   iFrame.style.borderRadius = '3vmin'; /* Rounded corners */
   iFrame.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)'; /* Shadow */
-
+  
   title.style.color = 'white'; /* make the text white */
-  title.style.fontSize = '20px'; /* make the text bigger */
+  title.style.fontSize = '40px'; /* make the text bigger */
+  title.style.weight = '700';
   title.style.marginBottom = '10px'; /* add some space between the text and the iframe */
   title.style.fontFamily = 'Arial, sans-serif'; /* Add this line! */
   title.innerHTML = 'Lithium';
@@ -53,7 +54,7 @@ function setup() {
   input.id = 'lithiumInput';
   input.style.marginTop = '10px';
   input.style.border = '3px solid #000';
-  input.style.borderRadius = '5px';
+  input.style.borderRadius = '3vmin';
   input.style.height = '50px';
   input.style.lineHeight = 'normal';
   input.style.color = '#282828';
@@ -64,14 +65,14 @@ function setup() {
   input.style.fontSize = '16px';
   input.style.padding = '0 6px';
   input.style.paddingLeft = '12px';
-  input.style.border = '3px solid #5551ff';
+  input.style.border = '3px solid ##eb4034';
                 
-
   details.style.color = 'white'; /* make the text white */
   details.style.fontSize = '20px'; /* make the text bigger */
   details.style.marginTop = '10px'; /* add some space between the text and the iframe */
   details.style.fontFamily = 'Arial, sans-serif'; /* Add this line! */
-  details.innerHTML = 'Enter to reload page, \ to toggle menu';    
+  details.innerHTML = 'Enter to reload page, \\ to toggle menu';    
+  details.style.weight = '400';
   
   document.body.appendChild(lithiumContainer);
   lithiumContainer.appendChild(title);
