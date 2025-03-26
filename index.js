@@ -35,7 +35,7 @@ function setup() {
   iFrame.src = link;
   iFrame.style.width = '60%'; /* Adjust the width of the iframe */
   iFrame.style.height = '60%'; /* Adjust the height of the iframe */
-  iFrame.style.border = '3px solid #eb4034';
+  iFrame.style.border = '3px solid #494d7e';
   iFrame.style.borderRadius = '3vmin'; /* Rounded corners */
   iFrame.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)'; /* Shadow */
   iFrame.style.background = 'rgb(255,255,255)';
@@ -63,7 +63,7 @@ function setup() {
   input.style.fontSize = '16px';
   input.style.padding = '0 6px';
   input.style.paddingLeft = '12px';
-  input.style.border = '3px solid #eb4034';
+  input.style.border = '3px solid #494d7e';
                 
   details.style.color = 'white'; /* make the text white */
   details.style.fontSize = '20px'; /* make the text bigger */
