@@ -69,6 +69,7 @@ document.addEventListener('keydown', function(event) {
   if (event.key === 'Enter' && menuToggled) {
     let inputField = document.getElementById("lithiumInput");
     link = inputField.value;
+    iFrame.src = link;
     iFrame.contentWindow.location.reload();
   }
 });
