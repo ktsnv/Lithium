@@ -44,13 +44,14 @@ function setup() {
 
   title.style.color = 'white'; /* make the text white */
   title.style.fontSize = '20px'; /* make the text bigger */
-  title.style.marginBottom = '5px'; /* add some space between the text and the iframe */
+  title.style.marginBottom = '10px'; /* add some space between the text and the iframe */
   title.style.fontFamily = 'Arial, sans-serif'; /* Add this line! */
   title.innerHTML = 'Lithium';
 
   input.type = 'text'
   input.value = link;
   input.id = 'lithiumInput';
+  input.style.marginTop = '10px';
   
   document.body.appendChild(lithiumContainer);
   lithiumContainer.appendChild(title);
@@ -68,6 +69,7 @@ document.addEventListener('keydown', function(event) {
   if (event.key === 'Enter' && menuToggled) {
     let inputField = document.getElementById("lithiumInput");
     link = inputField.value;
+    iFrame.contentWindow.location.reload();
   }
 });
 document.addEventListener('keyup', function(event) {
