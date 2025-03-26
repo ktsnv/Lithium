@@ -54,20 +54,20 @@ function setup() {
   input.value = link;
   input.id = 'lithiumInput';
   input.style.marginTop = '10px';
+  input.style.boxShadow = 'inset #abacaf 0 0 0 2px';
+  input.style.border = '0';
+  input.style.background = 'rgba(0, 0, 0, 0)';
+  input.style.appearance = 'none';
+  input.borderRadius = '3px';
+  input.style.color = 'rgb(0, 0, 0)';
+  input.style.fontWeight = '400';
+  input.style.height = '40px';
 
   details.style.color = 'white'; /* make the text white */
   details.style.fontSize = '20px'; /* make the text bigger */
   details.style.marginTop = '10px'; /* add some space between the text and the iframe */
   details.style.fontFamily = 'Arial, sans-serif'; /* Add this line! */
-  details.innerHTML = 'Enter to reload page, \ to toggle menu';
-  details.style.boxShadow = 'inset #abacaf 0 0 0 2px';
-  details.style.border = '0';
-  details.style.background = 'rgba(0, 0, 0, 0)';
-  details.style.appearance = 'none';
-  details.borderRadius = '3px';
-  details.style.color = 'rgb(0, 0, 0)';
-  details.style.fontWeight = '400';
-  details.style.height = '40px';           
+  details.innerHTML = 'Enter to reload page, \ to toggle menu';    
   
   document.body.appendChild(lithiumContainer);
   lithiumContainer.appendChild(title);
