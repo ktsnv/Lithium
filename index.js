@@ -59,12 +59,13 @@ function setup() {
   details.style.fontSize = '20px'; /* make the text bigger */
   details.style.marginTop = '10px'; /* add some space between the text and the iframe */
   details.style.fontFamily = 'Arial, sans-serif'; /* Add this line! */
-  details.innerHTML = 'R to reload, \ to toggle menu';
+  details.innerHTML = 'Enter to reload page, \ to toggle menu';
   
   document.body.appendChild(lithiumContainer);
   lithiumContainer.appendChild(title);
   lithiumContainer.appendChild(iFrame);
   lithiumContainer.appendChild(input);
+  lithiumContainer.appendChild(details);
 }
 
 document.addEventListener('keydown', function(event) {
@@ -77,7 +78,7 @@ document.addEventListener('keydown', function(event) {
     console.log('Lithium Menu Off');
     toggle(lithiumContainer);
   }
-  if (event.key === 'r' && menuToggled) {
+  if (event.key === 'Enter' && menuToggled) {
     let inputField = document.getElementById("lithiumInput");
     link = inputField.value;
     iFrame.src = link;
