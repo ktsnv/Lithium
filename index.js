@@ -8,7 +8,9 @@ setTimeout(setup, 0);
 
 function setup() {
   link = prompt("Please enter a link for the iframe");
-  
+  if (link == null) {
+    link = "https://ktsnv.github.io/"
+  }
   lithiumContainer = document.createElement('div');
   iFrame = document.createElement('iframe');
   title = document.createElement('div');
@@ -34,7 +36,7 @@ function setup() {
   //iFrame.style.maxWidth = '600px';
   //iFrame.style.maxHeight = '400px';
   iFrame.style.border = 'none'; /* Remove default iframe border */
-  iFrame.style.borderRadius = '10px'; /* Rounded corners */
+  iFrame.style.borderRadius = '5%'; /* Rounded corners */
   iFrame.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)'; /* Shadow */
 
   title.style.color = 'white'; /* make the text white */
