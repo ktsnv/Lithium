@@ -41,6 +41,7 @@ function setup() {
   iFrame.style.border = '3px solid ##eb4034';
   iFrame.style.borderRadius = '3vmin'; /* Rounded corners */
   iFrame.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)'; /* Shadow */
+  iFrame.style.background = 'rgb(255,255,255)';
   
   title.style.color = 'white'; /* make the text white */
   title.style.fontSize = '40px'; /* make the text bigger */
