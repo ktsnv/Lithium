@@ -2,6 +2,7 @@ let menuToggled = false;
 let lithiumContainer;
 let iFrame;
 let title;
+let input;
 let isKeyPressed = false;
 let link;
 setTimeout(setup, 0);
@@ -15,6 +16,7 @@ function setup() {
   lithiumContainer = document.createElement('div');
   iFrame = document.createElement('iframe');
   title = document.createElement('div');
+  input = document.createElement('input');
   
   lithiumContainer.id = "lithiumContainer";
   lithiumContainer.style.position = "fixed"; /* Makes it stay in place even when you scroll */
@@ -45,10 +47,15 @@ function setup() {
   title.style.marginBottom = '5px'; /* add some space between the text and the iframe */
   title.style.fontFamily = 'Arial, sans-serif'; /* Add this line! */
   title.innerHTML = 'Lithium';
+
+  input.type = 'text'
+  input.value = link;
+  input.id = 'lithiumInput';
   
   document.body.appendChild(lithiumContainer);
   lithiumContainer.appendChild(title);
   lithiumContainer.appendChild(iFrame);
+  lithiumContainer.appendChild(input);
 }
 
 document.addEventListener('keydown', function(event) {
@@ -56,6 +63,11 @@ document.addEventListener('keydown', function(event) {
     isKeyPressed = true;
     console.log('Lithium Menu Toggled');
     toggle(lithiumContainer);
+  }
+
+  if (event.key === 'Enter' && menuToggled) {
+    let inputField = document.getElementById("lithiumInput");
+    link = inputField.value;
   }
 });
 document.addEventListener('keyup', function(event) {
