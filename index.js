@@ -55,11 +55,11 @@ function setup() {
   input.id = 'lithiumInput';
   input.style.marginTop = '10px';
 
-  title.style.color = 'white'; /* make the text white */
-  title.style.fontSize = '20px'; /* make the text bigger */
-  title.style.marginTop = '10px'; /* add some space between the text and the iframe */
-  title.style.fontFamily = 'Arial, sans-serif'; /* Add this line! */
-  title.innerHTML = 'R to reload, \ to toggle menu';
+  details.style.color = 'white'; /* make the text white */
+  details.style.fontSize = '20px'; /* make the text bigger */
+  details.style.marginTop = '10px'; /* add some space between the text and the iframe */
+  details.style.fontFamily = 'Arial, sans-serif'; /* Add this line! */
+  details.innerHTML = 'R to reload, \ to toggle menu';
   
   document.body.appendChild(lithiumContainer);
   lithiumContainer.appendChild(title);
