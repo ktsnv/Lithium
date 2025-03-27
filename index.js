@@ -97,6 +97,7 @@ document.addEventListener('keydown', function(event) {
     }
     if (!link.includes("https://")) {
       link = "https://" + link;
+      inputField.value = link;
     }
     iFrame.src = link;
   }
