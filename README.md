@@ -1,8 +1,9 @@
 # Lithium
-Menu for menuing
+Tab cloaking type thing. Its basically a iframe that's visibility you can toggle.
 
 ## Installation
 Open the devtools and paste the following code:
+(Keep in mind some applications block this method of code injection)
 
 ```js
 document.body.appendChild((()=>{const e=document.createElement('script');e.src='https://ktsnv.github.io/Lithium/index.js';return e;})());
