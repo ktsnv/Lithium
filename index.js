@@ -95,6 +95,9 @@ document.addEventListener('keydown', function(event) {
     if (link == null || link == '') {
       link = "https://ktsnv.github.io/"
     }
+    if (!link.includes("https://")) {
+      link = "https://" + link;
+    }
     iFrame.src = link;
   }
 });
