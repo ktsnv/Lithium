@@ -2,7 +2,7 @@
 Tab cloaking type thing. Its basically a iframe that's visibility you can toggle.
 
 ## Installation
-### (Keep in mind some websites block this method of code injection)
+(Keep in mind some websites block this method of code injection)
 
 Open the devtools and paste the following code:
 
