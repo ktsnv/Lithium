@@ -18,4 +18,4 @@ javascript:(function()%7Bdocument.body.appendChild((()%3D%3E%7Bconst%20e%3Ddocum
 
 ## Usage
 
-Press <kbd>\</kbd> to open the menu.
+Press <kbd>\\</kbd> to open the menu.
